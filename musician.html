@@ -58,6 +58,31 @@
         }
 
         </script>  
+        <div class="container">
+            <img src="killerant.jpg" height="100" width="100" onclick="swapImage()" id="img" alt="image">
+            <script>
+                var useImage=1
+                function swapImage(){
+                    out=document.getElementById("img")
+                    switch(useImage){
+                        case 1:
+                            out.src="netwing.jpg"
+                            useImage=useImage+1
+                            break;
+                        case 2:
+                            out.src="sawflies.jpg"
+                            useImage=useImage+1
+                            break;
+                        case 3:
+                            out.src="netwing.jpg"
+                            useImage=1
+                            break;
+                        default:
+                            out.src="killerant.jpg"                
+                    }
+                    
+                }
+            </script>
 
 
 
