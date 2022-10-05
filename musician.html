@@ -20,7 +20,7 @@
         <input type ="password" id="form1_age" name="form1_age" min=10 max=50 step=2 value="John Lennon"> <br>
         <label for="form1_nick">Guess the musician </label>
         <input type ="text" id="form1_nick" name="form1_nick" autofocus > <br>
-        <input type="button" onclick="checkGuess()" value="Check the guess">
+        <input class="button" type="button" onclick="checkGuess()" value="Check the guess">
 
     </form>
     <p id="result">This text will be replaced</p>
@@ -76,15 +76,15 @@
                     switch(useImage){
                         case 1:
                             out.src="netwing.jpg"
-                            usingImage=usingImage+1
+                            useImage=useImage+1
                             break;
                         case 2:
                             out.src="sawflies.jpg"
-                            usingImage=usingImage+1
+                            useImage=useImage+1
                             break;
                         case 3:
                             out.src="netwing.jpg"
-                            usingImage=1
+                            useImage=1
                             break;
                         default:
                             out.src="killerant.jpg"                
